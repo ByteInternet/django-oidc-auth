@@ -1,6 +1,8 @@
 django-oidc-auth
 ================
 
+[![Build Status](https://travis-ci.org/ByteInternet/django-oidc-auth.svg?branch=master)](https://travis-ci.org/ByteInternet/django-oidc-auth)
+
 An OpenID Connect Client for Django.
 
 

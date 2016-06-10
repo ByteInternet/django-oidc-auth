@@ -272,6 +272,7 @@ class OpenIDUser(models.Model):
         # TODO encapsulate this?
         log.debug('Requesting userinfo in %s. sub: %s, access_token: %s' % (
             provider.userinfo_endpoint, sub, access_token))
+
         response = requests.get(provider.userinfo_endpoint, headers={
             'Authorization': 'Bearer %s' % access_token
         }, verify=oidc_settings.VERIFY_SSL)
